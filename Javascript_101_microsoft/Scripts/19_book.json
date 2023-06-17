@@ -1,0 +1,12 @@
+[
+    {
+        "Title": "Design do Dia a Dia",
+        "Author": "David Norman",
+        "IsAvalaible": false
+    },    
+    {
+        "Title": "Barbáro",
+        "Author": "Renato Moriconi",
+        "IsAvalaible": true
+    }
+]
