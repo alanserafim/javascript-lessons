@@ -138,5 +138,8 @@ console.log("Random between zero and ten: ",randomNumRoundFloor);
 ```
 */
 
-let js = "JavaScript"
-console.log(js[Math.floor(Math.random() * 10)]);
+//console.log('1\t1\t1\t1\t1\n2\t1\t2\t4\t8\n3\t1\t3\t9\t27\n4\t1\t4\t16\t64\n5\t1\t5\t25\t125')
+
+let pattern = /because/gi
+let string = 'You cannot end a sentence with because because because is a conjunction'
+console.log(string.match(pattern).length)  
