@@ -40,20 +40,103 @@
 
 // String Methods
 
-let js = 'JavaScript'
-let jsLength = js.length
-let lastIndex = js.length -1
+// let js = 'JavaScript'
+// let jsLength = js.length
+// let lastIndex = js.length -1
 
 // console.log(`Lenght: ${jsLength}`);
 // console.log(`First index value: ${js[0]}`);
 // console.log(`last index ${lastIndex}`);
 
-console.log(js.toUpperCase());
-console.log(js.toLowerCase());
+// console.log(js.toUpperCase());
+// console.log(js.toLowerCase());
 
 
-let string = 'JavaScript'
-console.log(string.substr(4,6))    // Script
+// let string = 'JavaScript'
+// console.log(string.substr(4,6))    // Script
 
-let country = 'Finland'
-console.log(country.substr(3, 4))   // land
+// // substr(): It takes two arguments, the starting index and number of characters to slice.
+
+// let country = 'Finland'
+// console.log(country.substr(3, 4))   // land
+
+// //substring(): It takes two arguments, the starting index and the stopping index but it doesn't include the character at the stopping index.
+// console.log(string.substring(0,4))    
+// console.log(country.substring(3, 7))   
+
+// let string = '30 Days Of JavaScript'
+
+// console.log(string.split())     // Changes to an array -> ["30 Days Of JavaScript"]
+// console.log(string.split(' '))  // Split to an array at space -> ["30", "Days", "Of", "JavaScript"]
+
+// let firstName = 'Alan'
+
+// console.log(firstName.split())    // Change to an array - > ["Asabeneh"]
+// console.log(firstName.split(''))  // Split to an array at each letter ->  ["A", "s", "a", "b", "e", "n", "e", "h"]
+
+// let countries = 'Finland, Sweden, Norway, Denmark, and Iceland'
+
+// console.log(countries.split(','))  // split to any array at comma -> ["Finland", " Sweden", " Norway", " Denmark", " and Iceland"]
+// console.log(countries.split(', ')) //  ["Finland", "Sweden", "Norway", "Denmark", "and Iceland"]
+
+//trim(): Removes trailing space in the beginning or the end of a string.
+
+// let string = '   30 Days Of JavaScript   '
+
+// console.log(string)
+// console.log(string.trim(' '))
+
+// let firstName = ' Asabeneh '
+
+// console.log(firstName)
+// console.log(firstName.trim())  // still removes spaces at the beginning and the end of the string
+
+// includes(): It takes a substring argument and it checks if substring argument exists in the string. 
+// includes() returns a boolean. If a substring exist in a string, it returns true, otherwise it returns false.
+
+// let bio = "Alan Nunes é Desenvolvedor de Software"
+
+// console.log(bio.includes("Desenvolvedor"));
+
+// replace(): takes as a parameter the old substring and a new substring.
+
+// let bio = "Alan Nunes é Desenvolvedor de Software"
+// bio = bio.replace("Software", "Sistema")
+// console.log(bio);
+
+//indexOf(): Takes a substring and if the substring exists in a string
+//it returns the first position of the substring if does not exist it returns -1
+// let string = '30 Days Of JavaScript'
+
+// console.log(string.indexOf('Script'))     //15
+// console.log(string.lastIndexOf('Script'))     
+
+
+// let challenge = '30 Days Of JavaScript'
+// let first = "30 Days of", second = "JavaScript"
+// console.log(challenge.repeat(2))
+
+// let setence = 'You cannot end a sentence with because because because is a conjunction'
+// console.log(setence.search("because"));
+
+
+
+// let phrase = 'I hope this course is not full of jargon'
+// console.log(phrase.includes('jargon'));
+
+/*
+```javascript
+let randomNum = Math.random()  // generates 0 to 0.999
+console.log("Random number: ",randomNum);
+
+let randomNumBetweenZeroAndTen = Math.random() *  11   // this gives: min 0 and max 10.99
+console.log("Random between 0 and 10.999... : ",randomNumBetweenZeroAndTen);
+
+let randomNumRoundFloor= Math.floor(Math.random() * 11) // this gives between 0 and 10
+console.log("Random between zero and ten: ",randomNumRoundFloor);
+
+```
+*/
+
+let js = "JavaScript"
+console.log(js[Math.floor(Math.random() * 10)]);
