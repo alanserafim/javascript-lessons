@@ -1,49 +1,10 @@
-function solution(sequence) {
-   let array1 = sequence
-   let array2 = [...sequence]
-   if(checkArray(array1)  || checkArrayReverse(array2)) {
-    return true
-   }
-   else return false
- }
- 
- 
- function checkArray(sequence){
-    let numerosRemovidos = 0
-    let array = sequence
-    console.log(array);
-    for(let i=0; i<array.length; i++){
-        console.log(array);
-       if(array[i] >= array[i+1] && numerosRemovidos < 1 ) {
-         array.splice(i, 1)
-         numerosRemovidos = 1
-         for(let i=0; i<array.length; i++){ 
-            console.log(array);
-            if(array[i] >= array[i+1] ) return false
-         }
-       }
-    }
-   return true
- }
+const now = new Date()
+console.log(now)
 
- function checkArrayReverse(sequence){
-    let numerosRemovidos = 0
-    let array = sequence.reverse()
-    console.log(array);
-    for(let i=0; i<array.length; i++){
-       console.log(array);
-       if(array[i] <= array[i+1]  && numerosRemovidos < 1) {
-         array.splice(i, 1)
-         numerosRemovidos = 1
-         for(let i=0; i<array.length; i++){ 
-            console.log(array);
-            if(array[i] <= array[i+1] ) return false
-         }
-       }
-    }
-   return true
- }
-
- 
-
- console.log(solution([1, 3, 2, 1]));
+console.log("year: ", now.getFullYear()) // 2020
+console.log("month: ", now.getMonth()) // 0, because the month is January,  month(0-11)
+console.log("date/day of the month: ", now.getDate()) // 4, because the day of the month is 4th,  day(1-31)
+console.log("day of the week", now.getDay())
+console.log("hours: ", now.getHours())
+console.log("minutes: ", now.getMinutes()) // 56, because the time is 00:56:41
+console.log("seconds: ", now.getSeconds()) // 41, because the time is 00:56:41
