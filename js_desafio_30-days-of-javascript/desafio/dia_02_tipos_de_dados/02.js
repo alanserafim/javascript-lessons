@@ -140,6 +140,13 @@ console.log("Random between zero and ten: ",randomNumRoundFloor);
 
 //console.log('1\t1\t1\t1\t1\n2\t1\t2\t4\t8\n3\t1\t3\t9\t27\n4\t1\t4\t16\t64\n5\t1\t5\t25\t125')
 
-let pattern = /because/gi
-let string = 'You cannot end a sentence with because because because is a conjunction'
-console.log(string.match(pattern).length)  
+// let pattern = /love/gi
+// let string = 'Love is the best thing in this world. Some found their love and some are still looking for their love.'
+// console.log(string.match(pattern).length)  
+
+const sentence = 'He earns 5000 euro from salary per month, 10000 euro annual bonus, 15000 euro online courses per month.'
+let regEx = /\d+/g
+let values = sentence.match(regEx)
+let sum = values.reduce((a,b) => parseInt(a) + parseInt(b))
+
+console.log(sum);
