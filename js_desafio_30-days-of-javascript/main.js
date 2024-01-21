@@ -1,15 +1,24 @@
-let now = new Date()
-let day = now.getDate()
-let month = now.getMonth() <10 ? `0${now.getMonth() + 1}` : now.getMonth() + 1
-let year = now.getFullYear()
-let hours = now.getHours().toFixed(0)
-let minutes = now.getMinutes().toFixed(0)
+let month = "june"
 
-let date1 = `${year}/${month}/${day} ${hours}:${minutes}`
-let date2 = `${day}-${month}-${year} ${hours}:${minutes}`
-let date3 = `${day}/${month}/${year} ${hours}:${minutes}`
-
-
-console.log(date1);
-console.log(date2);
-console.log(date3);
+switch(true){
+    case month == "january" || 
+         month == "march" || 
+         month == "may" ||
+         month == "july" ||
+         month == "august" ||
+         month == "october" ||
+         month == "december":
+        console.log(`${month} has 31 days.`)
+        break;
+    case month == "april" || 
+         month == "june" ||
+         month == "september" ||
+         month == "november":
+        console.log(`${month} has 30 days.`)
+        break;
+    case month == "february":
+        console.log(`${month} has 28 days.`)
+        break;
+    default: 
+        console.log(`${month} is not a valid month.`)
+}
